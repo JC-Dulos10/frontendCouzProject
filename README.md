@@ -1,6 +1,6 @@
 ﻿PH Stock Exchange Live Tracker
 Project Overview
-This project is a web application that connects to the Philippine Stock Exchange (PSE) API to display live values of stocks listed on the PSE. The application is built using React.js, providing users with real-time updates and detailed information about stock performance. This project is a collaboration between [Your Name] and [Your Cousin's Name].
+This project is a web application that connects to the Philippine Stock Exchange (PSE) API to display live values of stocks listed on the PSE. The application is built using React.js, providing users with real-time updates and detailed information about stock performance. This project is a collaboration between Juan Carlos Dulos and Jan Ruiz Grubat.
 Features
 * Real-time Stock Data: Fetches and displays live stock prices from the PSE API.
 * User-Friendly Interface: Designed with a clean and responsive UI using React.js.
