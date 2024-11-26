@@ -13,7 +13,7 @@ Features
 Technologies Used
 * Frontend: React.js
 * API: Philippine Stock Exchange API
-* Styling: CSS, Bootstrap/Tailwind CSS (choose one)
+* Styling: CSS, Tailwind CSS
 * State Management: Redux (if applicable)
 * Deployment: AWS (Amazon Web Services)
 * Version Control: Git
