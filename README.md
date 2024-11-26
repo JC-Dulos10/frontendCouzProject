@@ -1,4 +1,4 @@
-﻿# 📈 **PH Stock Exchange Live Tracker**
+# 📈 **PH Stock Exchange Live Tracker**
 
 ![React](https://img.shields.io/badge/Frontend-React-blue)  
 ![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-teal)  
@@ -82,5 +82,3 @@ npm run build
 ## 👥 **Contributors**
 - **Juan Carlos Dulos**  
 - **Jan Ruiz Grubat**
-
-
