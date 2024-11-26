@@ -1,0 +1,18 @@
+version: 1
+applications:
+  - appRoot: .
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm ci # Install dependencies using npm
+        build:
+          commands:
+            - npm run build # Build the React app
+      artifacts:
+        baseDirectory: build
+        files:
+          - '**/*' # Deploy everything from the build folder
+      cache:
+        paths:
+          - node_modules/**/* # Cache node_modules to speed up builds
