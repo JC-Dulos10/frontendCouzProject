@@ -5,14 +5,30 @@ const StockList = () => {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const [asOf, setAsOf] = useState(""); // New state for the timestamp
   const itemsPerPage = 12;
 
   useEffect(() => {
     fetch("https://phisix-api3.appspot.com/stocks.json")
       .then((response) => response.json())
-      .then((json) => setData(json.stock))
+      .then((json) => {
+        setData(json.stock);
+        setAsOf(json.as_of); // Set the timestamp from the API
+      })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
+
+  // Format the timestamp
+  const formattedAsOf = new Date(asOf).toLocaleString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    timeZoneName: "short",
+  });
 
   const filteredData = data.filter((stock) =>
     stock.symbol.toLowerCase().includes(searchTerm.toLowerCase())
@@ -34,6 +50,12 @@ const StockList = () => {
 
   return (
     <div>
+      {/* Header with Timestamp */}
+      <div className="text-center my-4">
+        <p className="text-sm text-gray-600">Data updated as of:</p>
+        <p className="text-lg font-semibold">{formattedAsOf}</p>
+      </div>
+
       {/* Search Bar */}
       <div className="max-w-md mx-auto mb-4">
         <input
