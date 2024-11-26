@@ -5,14 +5,14 @@ applications:
       phases:
         preBuild:
           commands:
-            - npm ci # Install dependencies using npm
+            - npm install # Install dependencies and generate package-lock.json if missing
         build:
           commands:
             - npm run build # Build the React app
       artifacts:
-        baseDirectory: build
+        baseDirectory: build # Define the build folder to deploy
         files:
-          - '**/*' # Deploy everything from the build folder
+          - '**/*' # Include all files in the build folder
       cache:
         paths:
-          - node_modules/**/* # Cache node_modules to speed up builds
+          - node_modules/**/* # Cache node_modules to speed up subsequent builds
