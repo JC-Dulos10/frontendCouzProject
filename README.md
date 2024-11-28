@@ -10,6 +10,9 @@
 ## 🌟 **Project Overview**
 **PH Stock Exchange Live Tracker** is a modern web application that connects to the Philippine Stock Exchange (PSE) API to display live stock data in real-time. Designed with a clean and responsive UI, this app allows users to search, browse, and track stock performance efficiently.
 
+- **Live Website**: [https://prod.d1zgsv9zu53ri1.amplifyapp.com/](https://prod.d1zgsv9zu53ri1.amplifyapp.com/)
+- **Development Version**: [https://development.d1zgsv9zu53ri1.amplifyapp.com/](https://development.d1zgsv9zu53ri1.amplifyapp.com/)
+
 ---
 
 ## ✨ **Features**
